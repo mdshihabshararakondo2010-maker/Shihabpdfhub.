@@ -1,139 +1,150 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <meta charset="UTF-8">
+
 <title>Shihab PDF HUB</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-body{
-margin:0;
-font-family:Arial;
-background:#f4f6f9;
-}
-
-header{
-background:#1e2a38;
-color:white;
-text-align:center;
-padding:25px;
-}
-
-header h1{
-margin:0;
-}
-
-nav{
-background:#243447;
-text-align:center;
-padding:12px;
-}
-
-nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.container{
-width:90%;
-margin:auto;
-padding:20px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-border-radius:10px;
-padding:20px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.card h3{
-margin-top:10px;
-}
-
-.download{
-background:#3498db;
-color:white;
-border:none;
-padding:10px 15px;
-border-radius:6px;
-cursor:pointer;
-}
-
-.download:hover{
-background:#2980b9;
-}
-
-footer{
-background:#1e2a38;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:30px;
-}
-
-</style>
 </head>
 
 <body>
 
 <header>
+
 <h1>Shihab PDF HUB</h1>
-<p>Your Digital Learning Platform</p>
+
+<p>Premium Digital Learning Platform</p>
+
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">PDF Library</a>
-<a href="#">Contact</a>
+
+<a href="#home">Home</a>
+
+<a href="#products">Products</a>
+
+<a href="#payment">Payment</a>
+
+<a href="#contact">Contact</a>
+
 </nav>
 
-<div class="container">
+<section id="home">
 
-<h2>Popular PDFs</h2>
+<h2>Welcome</h2>
+
+<p>Download the best learning PDFs.</p>
+
+</section>
+
+<section id="products">
+
+<h2>PDF Library</h2>
+
+<input id="search" placeholder="Search PDF..." onkeyup="searchPDF()">
 
 <div class="grid">
 
 <div class="card">
+
 <h3>English Learning</h3>
+
 <p>Improve your English skills.</p>
-<a href="english.pdf">
-<button class="download">Download</button>
+
+<a href="pdf/english.pdf" target="_blank">
+
+<button>Preview</button>
+
 </a>
+
+<a href="#payment">
+
+<button>Buy</button>
+
+</a>
+
 </div>
 
 <div class="card">
+
 <h3>Math Shortcut</h3>
-<p>Fast math tricks for exams.</p>
-<a href="math.pdf">
-<button class="download">Download</button>
+
+<p>Quick math tricks.</p>
+
+<a href="pdf/math.pdf" target="_blank">
+
+<button>Preview</button>
+
 </a>
+
+<a href="#payment">
+
+<button>Buy</button>
+
+</a>
+
 </div>
 
 <div class="card">
+
 <h3>Exam Preparation</h3>
-<p>Important exam preparation notes.</p>
-<a href="exam.pdf">
-<button class="download">Download</button>
+
+<p>Important exam notes.</p>
+
+<a href="pdf/exam.pdf" target="_blank">
+
+<button>Preview</button>
+
 </a>
-</div>
+
+<a href="#payment">
+
+<button>Buy</button>
+
+</a>
 
 </div>
 
 </div>
+
+</section>
+
+<section id="payment">
+
+<h2>Payment</h2>
+
+<p>Send payment using:</p>
+
+<p>bKash: 01XXXXXXXXX</p>
+
+<p>Nagad: 01XXXXXXXXX</p>
+
+<p>After payment send Transaction ID to email.</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: shihabpdfhub@gmail.com</p>
+
+<p>WhatsApp: 01XXXXXXXXX</p>
+
+</section>
 
 <footer>
-© 2026 Shihab PDF HUB
+
+<p>© 2026 Shihab PDF HUB</p>
+
 </footer>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
